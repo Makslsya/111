@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html>
-<body style="background:black">
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Audio Player</title>
 
-<audio autoplay>
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0b0b0b;
+    font-family:Arial, sans-serif;
+}
+
+.player{
+    text-align:center;
+    background:#111;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 0 40px rgba(0,0,0,0.6);
+}
+
+h1{
+    color:#ffffff;
+    font-weight:500;
+    margin-bottom:30px;
+    letter-spacing:2px;
+}
+
+audio{
+    width:300px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="player">
+<h1>Audio Playback</h1>
+
+<audio controls>
 <source src="sound.mp3" type="audio/mpeg">
 </audio>
+
+</div>
 
 </body>
 </html>
